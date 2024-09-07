@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Connection Test</title>
+
+    <!-- Load ethers.js -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+
+    <!-- Connect MetaMask script -->
+    <script defer src="walletconnect.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Display wallet address -->
+        <div id="walletInfo" style="font-size: 18px; margin-bottom: 20px;">
+            <strong>Wallet:</strong> <span id="connectedWallet">Not connected</span>
+        </div>
+
+        <!-- Connect MetaMask button -->
+        <button id="connectButton">Connect MetaMask</button>
+
+        <!-- Display output -->
+        <div id="output"></div>
+    </div>
+</body>
+</html>
